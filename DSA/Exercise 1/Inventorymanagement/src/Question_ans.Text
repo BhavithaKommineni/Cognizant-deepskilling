@@ -1,0 +1,33 @@
+1. Explain why data structures and algorithms are essential in handling large inventories.
+
+Importance of data structures and algorithms are:
+Data structures and algorithms are crucial for efficiently managing and processing data in software systems. 
+They impact the performance, scalability, and responsiveness of applications by determining how data is stored, accessed, and manipulated. 
+Efficient data structures, like HashMap for quick lookups, and well-designed algorithms, such as sorting and searching techniques, ensure that operations are performed quickly and resources are used effectively. 
+This leads to better performance, scalability, and user experience, making these concepts fundamental for developing robust and high-performing software systems.
+
+
+2. Discuss the types of data structures suitable for this problem.
+
+Suitable Data Structures:
+ArrayList: Useful if you need ordered storage and frequent access by index. 
+          However, adding or deleting elements can be costly as it may involve shifting elements.
+HashMap: Offers fast retrieval, insertion, and deletion operations. It uses a key-value pair structure where the key 
+          could be productId and the value could be a Product object. This is generally efficient for searching by unique identifiers.
+
+4. Analysis:
+Analyze the time complexity of each operation (add, update, delete) in your chosen data structure.
+Discuss how you can optimize these operations.
+
+Time Complexity:
+
+Add Operation: O(1) – HashMap provides constant time complexity for insertion.
+Update Operation: O(1) – Updating an existing entry in HashMap is also constant time.
+Delete Operation: O(1) – Deleting an entry from HashMap is constant time as well.
+Retrieve Operation: O(1) – HashMap allows constant time retrieval by key.
+
+Optimization:
+
+HashMap: Already optimized for average-case constant time complexity for add, update, delete, and retrieve operations. 
+Ensure the hash function distributes keys uniformly to avoid collisions.
+Handling Large Data: For extremely large inventories, consider partitioning data or using distributed systems.

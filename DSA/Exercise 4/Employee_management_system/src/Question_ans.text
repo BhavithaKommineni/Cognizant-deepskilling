@@ -1,0 +1,28 @@
+1.	Understand Array Representation:
+o	Explain how arrays are represented in memory and their advantages.
+
+Array Representation in Memory:
+
+Contiguous Memory Allocation: Arrays are stored in contiguous blocks of memory. This means that the memory addresses of array elements are sequential, which allows for efficient indexing and access.
+Fixed Size: The size of an array is defined at the time of creation and cannot be changed. This fixed size can lead to wasted memory if the array is not fully utilized or to the need for resizing if more elements need to be added than initially planned.
+
+Advantages of Arrays:
+
+Efficient Access: Accessing an element by index is O(1) due to the contiguous memory layout, which allows direct computation of an element's memory address.
+Ease of Use: Arrays are simple to use and understand, making them a good choice for straightforward data storage and manipulation.
+Memory Efficiency: If the size of the data set is known in advance and doesn't change, arrays can be more memory-efficient than dynamic data structures.
+
+4.	Analysis:
+o	Analyze the time complexity of each operation (add, search, traverse, delete).
+o	Discuss the limitations of arrays and when to use them.
+
+Time Complexity:
+
+Add Operation: O(1) when adding to the end of the array, assuming there is space.
+Search Operation: O(n) in the worst case, as it requires checking each element.
+Traverse Operation: O(n) since every element is accessed once.
+Delete Operation: O(n) in the worst case due to the need to shift elements after deletion.
+Limitations of Arrays:
+
+Fixed Size: Arrays have a fixed size, which can lead to issues if the number of elements exceeds the initial allocation or if there is excess unused space.
+Inefficient Deletion/Insertion: Deleting or inserting elements at arbitrary positions requires shifting elements, which is time-consuming for large arrays (O(n) complexity).

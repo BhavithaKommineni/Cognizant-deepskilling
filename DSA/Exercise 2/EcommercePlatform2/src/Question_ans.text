@@ -1,0 +1,42 @@
+1.	Understand Asymptotic Notation:
+o	Explain Big O notation and how it helps in analyzing algorithms.
+o	Describe the best, average, and worst-case scenarios for search operations.
+
+Big O Notation:
+
+Big O notation is a mathematical concept used to describe the efficiency of algorithms in terms of their time complexity and space complexity. 
+It provides an upper bound on the running time or space required by an algorithm, giving a high-level understanding of its performance as the input size grows.
+
+Search Operation Scenarios:
+
+Best Case: The best-case scenario is when the desired element is found at the first position (e.g., searching for a specific product in an array where the product is at the first index). 
+For linear search, this is O(1), and for binary search, this is also O(1) if the element is in the middle of the array.
+
+Average Case: The average-case scenario assumes that the desired element could be anywhere in the data structure. 
+For linear search, this is O(n), where n is the number of elements. For binary search, this is O(log n), assuming the array is sorted.
+
+Worst Case: The worst-case scenario is when the desired element is not present or is located at the end of the search process.
+ For linear search, this is O(n). For binary search, this is O(log n), where you repeatedly split the array in half until the element is found or the search space is exhausted.
+
+4.	Analysis:
+o	Compare the time complexity of linear and binary search algorithms.
+o	Discuss which algorithm is more suitable for your platform and why.
+
+Time Complexity Comparison:
+
+Linear Search:
+
+Best Case: O(1)
+Average Case: O(n)
+Worst Case: O(n)
+Binary Search:
+
+Best Case: O(1)
+Average Case: O(log n)
+Worst Case: O(log n)
+
+Suitability:
+
+Linear Search is simpler and does not require a sorted array. It is suitable for smaller datasets or unsorted data.
+Binary Search is more efficient for larger datasets and requires a sorted array. Its O(log n) time complexity makes it ideal for scenarios where frequent searches are performed on large datasets.
+

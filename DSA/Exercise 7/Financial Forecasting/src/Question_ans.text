@@ -1,0 +1,29 @@
+1.	Understand Recursive Algorithms:
+o	Explain the concept of recursion and how it can simplify certain problems.
+
+Answers :
+
+Recursion:
+
+Concept: Recursion is a technique where a function calls itself to solve a smaller instance of the same problem. This approach can simplify solving problems that have a natural recursive structure, like the computation of factorials, Fibonacci sequences, or tree traversals.
+Base Case: Recursion relies on a base case to terminate the recursive calls, preventing infinite loops. The base case represents the simplest form of the problem that can be solved directly.
+Recursive Case: The problem is broken down into smaller subproblems that resemble the original problem. The function calls itself with these subproblems, progressively reducing their size.
+
+2. Setup
+We will implement a recursive method to predict future financial values based on a fixed growth rate. The formula for future value given a present value, growth rate, and time period can be expressed as:
+Future Value=Present Value×(1+Growth Rate)Years
+
+
+4.	Analysis:
+o	Discuss the time complexity of your recursive algorithm.
+o	Explain how to optimize the recursive solution to avoid excessive computation.
+
+Answers :
+
+Time Complexity:
+Recursive Algorithm: The time complexity is O(n), where n is the number of years. 
+The algorithm makes a recursive call for each year, and thus the number of calls is proportional to the number of years.
+
+Optimization to Avoid Excessive Computation:
+Memoization: Store the results of intermediate calculations to avoid redundant computations. In this problem, since each year's computation is dependent on the previous year's result, memoization can help save computation time in more complex recursive problems.
+Iterative Approach: Transforming the recursive solution into an iterative one can avoid the overhead of recursive calls, which consume stack space and may lead to stack overflow for large inputs.

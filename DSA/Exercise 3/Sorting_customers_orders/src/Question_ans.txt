@@ -1,0 +1,41 @@
+1.	Understand Sorting Algorithms:
+o	Explain different sorting algorithms (Bubble Sort, Insertion Sort, Quick Sort, Merge Sort).
+
+Bubble Sort:
+
+Algorithm: Repeatedly steps through the list, compares adjacent elements, and swaps them if they are in the wrong order. This process is repeated until the list is sorted.
+Time Complexity: O(n^2) in the worst and average cases. Best case is O(n) if the list is already sorted.
+Space Complexity: O(1) .
+Insertion Sort:
+
+Algorithm: Builds the final sorted array one item at a time. It picks elements from the unsorted portion and inserts them into their correct position in the sorted portion.
+Time Complexity: O(n^2) in the worst and average cases. Best case is O(n) if the list is already sorted.
+Space Complexity: O(1).
+Quick Sort:
+
+Algorithm: Divides the list into sublists based on a pivot element. Elements less than the pivot go to one sublist, and elements greater than the pivot go to another. The sublists are then sorted recursively.
+Time Complexity: O(n^2) in the worst case (when the smallest or largest element is always chosen as the pivot). Average and best cases are O(n log n).
+Space Complexity: O(log n) for the recursion stack in the average case.
+Merge Sort:
+
+Algorithm: Divides the list into halves, recursively sorts each half, and then merges the sorted halves to produce the final sorted list.
+Time Complexity: O(n log n) in all cases.
+Space Complexity: O(n) (not in-place sorting, requires additional space for merging).
+
+4.	Analysis:
+o	Compare the performance (time complexity) of Bubble Sort and Quick Sort.
+o	Discuss why Quick Sort is generally preferred over Bubble Sort.
+
+Time Complexity Comparison:
+
+Bubble Sort: O(n^2) in the worst and average cases, making it inefficient for large datasets.
+Quick Sort: O(n^2) in the worst case (rare, depending on pivot choice), but O(n log n) on average and best cases. 
+Generally much faster than Bubble Sort for large datasets due to better average-case time complexity.
+
+Why Quick Sort is Preferred:
+
+Efficiency: Quick Sort is more efficient than Bubble Sort for large datasets due to its average-case time complexity of O(n log n), compared to Bubble Sort’s O(n^2).
+Scalability: Quick Sort scales better with increasing data size, making it suitable for performance-critical applications.
+Flexibility: Quick Sort can be optimized with different pivot selection strategies and in-place partitioning, further improving its performance.
+
+
