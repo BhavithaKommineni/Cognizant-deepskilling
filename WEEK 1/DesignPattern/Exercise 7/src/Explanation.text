@@ -1,0 +1,11 @@
+Observer Pattern: The Observer Pattern defines a one-to-many relationship between objects so that when one object (the subject) changes state, all its dependents (observers) are notified and updated automatically.
+
+Subject Interface: Stock defines methods to register, deregister, and notify observers. It manages the list of observers and updates them when the state changes.
+
+Concrete Subject: StockMarket implements the Stock interface, maintaining a list of observers and notifying them of changes in stock prices.
+
+Observer Interface: Observer defines a method update() for receiving updates from the subject.
+
+Concrete Observers: MobileApp and WebApp implement the Observer interface and react to stock price updates by printing a message.
+
+Test Class: Demonstrates registering observers, changing the stock price, and notifying observers, showcasing the flexibility and utility of the Observer Pattern.

@@ -1,0 +1,9 @@
+Strategy Pattern: The Strategy Pattern defines a family of algorithms, encapsulates each one, and makes them interchangeable. This pattern lets the algorithm vary independently from clients that use it.
+
+Strategy Interface: PaymentStrategy defines the method pay(), which all concrete strategies must implement.
+
+Concrete Strategies: CreditCardPayment and PayPalPayment implement the PaymentStrategy interface and provide specific implementations for the pay() method.
+
+Context Class: PaymentContext holds a reference to a PaymentStrategy object and uses it to perform payment operations. It allows changing the payment strategy at runtime.
+
+Test Class: Demonstrates how to set and use different payment strategies, showing the flexibility and ease of switching between different payment methods at runtime.

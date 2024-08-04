@@ -1,0 +1,7 @@
+Model: Student class holds the data (student details) and provides getters and setters to access and modify the data.
+
+View: StudentView class is responsible for displaying the student details. It provides a method displayStudentDetails() that formats and prints the student's data.
+
+Controller: StudentController class acts as an intermediary between the model and the view. It retrieves data from the model, updates the view, and handles updates to the model based on user input or other actions.
+
+Test Class: Demonstrates how the MVC pattern works by creating instances of Student, StudentView, and StudentController. It shows how the controller can update the model and refresh the view to reflect changes.

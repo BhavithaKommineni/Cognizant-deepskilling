@@ -1,0 +1,9 @@
+Proxy Pattern: This pattern provides a surrogate or placeholder for another object to control access to it. The proxy can add functionality, such as caching and lazy loading, without changing the real object.
+
+Subject Interface: Image defines the method display() that both RealImage and ProxyImage implement.
+
+Real Subject Class: RealImage represents the actual object that does the heavy lifting, such as loading an image from a remote server.
+
+Proxy Class: ProxyImage controls access to RealImage. It implements lazy initialization by creating RealImage only when needed and caches the loaded image to avoid repeated loads.
+
+Test Class: Demonstrates how to use ProxyImage to load and display images. The proxy ensures images are loaded only when first requested and then cached for subsequent requests.

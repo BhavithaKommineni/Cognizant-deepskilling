@@ -1,0 +1,9 @@
+Adapter Pattern: This pattern allows incompatible interfaces to work together by converting the interface of a class into another interface that the client expects. In this case, it enables a uniform interface (PaymentProcessor) for processing payments through different gateways.
+
+Target Interface: PaymentProcessor defines the method processPayment() that each adapter class implements to provide a consistent interface.
+
+Adaptee Classes: These classes (PayPalGateway, StripeGateway, SquareGateway) represent existing payment gateway interfaces with their specific methods for processing payments.
+
+Adapter Classes: Each adapter class (PayPalAdapter, StripeAdapter, SquareAdapter) implements the PaymentProcessor interface and translates the processPayment() call into a call to the appropriate method of the adaptee class.
+
+Test Class: Demonstrates how to use different payment gateways through the adapter, highlighting the flexibility and consistency the adapter pattern provides.

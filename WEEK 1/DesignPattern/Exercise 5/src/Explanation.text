@@ -1,0 +1,11 @@
+Decorator Pattern: The Decorator Pattern allows you to add new functionality to an existing object dynamically. It provides a flexible alternative to subclassing for extending functionality.
+
+Component Interface: Notifier defines the method send() that all notifiers must implement.
+
+Concrete Component: EmailNotifier is the basic implementation of the Notifier interface.
+
+Decorator Class: NotifierDecorator is an abstract class that implements Notifier and holds a reference to a Notifier object, allowing it to add new behavior before or after delegating the call to the original object.
+
+Concrete Decorators: SMSNotifierDecorator and SlackNotifierDecorator extend NotifierDecorator to add specific functionalities for sending SMS and Slack messages, respectively.
+
+Test Class: Demonstrates how to compose a notification system that can send messages via multiple channels using decorators, showing the flexibility and power of the Decorator Pattern.

@@ -1,0 +1,11 @@
+Command Pattern: The Command Pattern encapsulates a request as an object, thereby allowing for parameterization of clients with different requests, queuing of requests, and logging of the requests. It also provides support for undoable operations.
+
+Command Interface: Command defines a method execute() which is implemented by concrete command classes.
+
+Concrete Commands: LightOnCommand and LightOffCommand implement the Command interface and define the specific actions for turning a light on or off. Each command object encapsulates a request to execute a specific action on a Light object.
+
+Invoker Class: RemoteControl holds a reference to a Command object and invokes the command when the button is pressed. It allows the command to be executed without knowing the details of the receiver or the action being performed.
+
+Receiver Class: Light contains methods to perform actual actions (turning on and off). The receiver is the class that performs the operations requested by the command.
+
+Test Class: Demonstrates the use of RemoteControl to execute commands for turning a light on and off, showcasing how commands can be issued and executed in a flexible and decoupled manner.

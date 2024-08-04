@@ -1,0 +1,9 @@
+Repository Interface: CustomerRepository defines a method findCustomerById() that will be implemented by concrete classes. It provides a contract for how customer data is accessed.
+
+Concrete Repository: CustomerRepositoryImpl implements CustomerRepository and provides the actual implementation for retrieving customer data. In a real application, this might interact with a database.
+
+Service Class: CustomerService relies on CustomerRepository to perform operations related to customer data. It uses constructor injection to receive an instance of CustomerRepository, which makes it easier to manage dependencies and test the service.
+
+Dependency Injection: Constructor injection is used to pass an instance of CustomerRepository into CustomerService. This approach promotes loose coupling between classes and makes the code more flexible and easier to test.
+
+Test Class: Demonstrates how to create instances of CustomerRepositoryImpl and CustomerService, and how to use the service to find a customer. This setup showcases how DI simplifies the creation and management of object dependencies.
