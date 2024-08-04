@@ -1,0 +1,7 @@
+Factory Method Pattern: This pattern defines an interface for creating an object but lets subclasses alter the type of objects that will be created.
+
+Abstract Factory: DocumentFactory defines the createDocument() method, which concrete factory classes implement to create specific document instances.
+
+Concrete Document Classes: Each document type (Word, PDF, Excel) has a corresponding concrete class implementing the Document interface.
+
+Test Class: Demonstrates the creation of different document types using the factory method.

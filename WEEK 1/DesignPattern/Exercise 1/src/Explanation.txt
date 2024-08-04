@@ -1,0 +1,5 @@
+Singleton Pattern: The Singleton pattern ensures a class has only one instance and provides a global point of access to it.
+Private Constructor: The constructor is private to prevent instantiation from outside the class.
+Static Instance: The instance is stored as a private static variable to maintain a single instance.
+Lazy Initialization: The instance is created only when needed, known as lazy initialization.
+This implementation provides a simple Singleton pattern example. For multithreaded applications, you might want to make the getInstance() method thread-safe using synchronization or other concurrency controls.
