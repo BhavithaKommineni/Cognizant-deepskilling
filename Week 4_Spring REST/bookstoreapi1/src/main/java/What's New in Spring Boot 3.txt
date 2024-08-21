@@ -1,0 +1,25 @@
+Spring Boot 3.x brings several new features and updates. Here are some highlights:
+
+1.Java 17+ Support:
+
+ ->Spring Boot 3.x requires Java 17 or later. This aligns with the latest LTS (Long Term Support) version of Java and offers improved performance and new language features.
+2.Spring Framework 6:
+
+ ->Spring Boot 3.x is based on Spring Framework 6, which includes updates such as:
+ ->Enhanced native support: Improved support for building native executables with GraalVM.
+ ->Updated Jakarta EE: Spring Framework 6 is aligned with Jakarta EE 9 (namespace change from javax.* to jakarta.*).
+3.Improved Observability:
+
+ ->Better support for monitoring and metrics with Micrometer and integration with observability tools.
+4.Configuration Properties Validation:
+
+ ->Enhanced validation of configuration properties using JSR-380 (Bean Validation 2.0).
+5.New Dependency Management:
+
+ ->Updated versions of core dependencies and integration with new versions of third-party libraries.
+6.Deprecations and Removals:
+
+ ->Some older or deprecated features and configurations have been removed. Check the migration guide for details.
+7.Updated Test Support:
+
+ ->Improved test support and utilities for easier and more effective testing.

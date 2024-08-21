@@ -1,0 +1,14 @@
+The basic structure of a Spring Boot project includes:
+
+src/main/java/com/example/bookstoreapi:
+
+BookstoreApiApplication.java: The main application class with the @SpringBootApplication annotation.
+controller: Package for REST controllers.
+model: Package for domain models/entities.
+repository: Package for data access interfaces.
+service: Package for business logic.
+exception: (Optional) Package for custom exceptions.
+src/main/resources:
+
+application.properties or application.yml: Configuration files.
+src/test/java/com/example/bookstoreapi: Contains test classes.
